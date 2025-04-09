@@ -17,30 +17,31 @@
 
 
     // Navbar on scrolling
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 0) {
+    $(window).on('scroll', function () {
+        if ($(window).scrollTop() > 0) {
             $('.navbar').addClass('nav-sticky');
         } else {
             $('.navbar').removeClass('nav-sticky');
         }
     });
 
-
     // Smooth scrolling on the navbar links
     $(".navbar-nav a").on('click', function (event) {
         if (this.hash !== "") {
             event.preventDefault();
-            
+            var target = this.hash;
             $('html, body').animate({
-                scrollTop: $(this.hash).offset().top - 45
+                scrollTop: $(target).offset().top - $('.navbar').outerHeight()
             }, 1500, 'easeInOutExpo');
             
-            if ($(this).parents('.navbar-nav').length) {
-                $('.navbar-nav .active').removeClass('active');
-                $(this).closest('a').addClass('active');
-            }
+            // Update active class
+            $('.navbar-nav .active').removeClass('active');
+            $(this).closest('a').addClass('active');
         }
     });
+    
+    
+  
     
     
     // Back to top button
