@@ -16,32 +16,43 @@
     new WOW().init();
 
 
-    // Navbar on scrolling
-    $(window).on('scroll', function () {
-        if ($(window).scrollTop() > 0) {
-            $('.navbar').addClass('nav-sticky');
-        } else {
-            $('.navbar').removeClass('nav-sticky');
-        }
-    });
-
-    // Smooth scrolling on the navbar links
-    $(".navbar-nav a").on('click', function (event) {
-        if (this.hash !== "") {
-            event.preventDefault();
-            var target = this.hash;
-            $('html, body').animate({
-                scrollTop: $(target).offset().top - $('.navbar').outerHeight()
-            }, 1500, 'easeInOutExpo');
-            
-            // Update active class
-            $('.navbar-nav .active').removeClass('active');
-            $(this).closest('a').addClass('active');
-        }
-    });
+        document.addEventListener('DOMContentLoaded', function () {
+        // Inicializar ScrollSpy
+        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '.navbar',
+            offset: 70
+        });
     
+        // Cambiar estilo del navbar al hacer scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('nav-sticky');
+            } else {
+                navbar.classList.remove('nav-sticky');
+            }
+        });
     
-  
+        // Smooth scrolling on the navbar links
+        document.querySelectorAll('.navbar-nav a').forEach(link => {
+            link.addEventListener('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    const target = document.querySelector(this.hash);
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    
+                    window.scrollTo({
+                        top: target.offsetTop - navbarHeight,
+                        behavior: 'smooth'
+                    });
+    
+                    // Update active class
+                    document.querySelector('.navbar-nav .active')?.classList.remove('active');
+                    this.parentElement.classList.add('active');
+                }
+            });
+        });
+    });
     
     
     // Back to top button

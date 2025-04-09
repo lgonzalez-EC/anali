@@ -76,7 +76,7 @@
     font-weight: normal;
 }
 
- 
+
 /*** Navbar ***/
 .navbar {
     position: relative;
@@ -114,12 +114,13 @@
 
 @media (min-width: 992px) {
     .navbar {
-        position: absolute;
+        position: fixed;
+        top: 0;
         width: 100%;
-        padding: 30px 60px;
-        background: rgba(248, 248, 250, 0.36) !important;
-        border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
-        z-index: 9;
+        padding: 15px 60px;
+        background: rgba(248, 248, 250, 0.9) !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        z-index: 999;
     }
     
     .navbar.nav-sticky {
@@ -159,9 +160,13 @@
     }
 }
 
+section {
+    scroll-margin-top: 70px; /* Ajusta según la altura del navbar */
+}
+
 @media (max-width: 991.98px) {   
     .navbar {
-        padding: 15px;
+        padding: 15px !important;
         background: #fafafa !important;
     }
     
