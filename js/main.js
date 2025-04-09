@@ -33,25 +33,6 @@
             }
         });
     
-        // Smooth scrolling on the navbar links
-        document.querySelectorAll('.navbar-nav a').forEach(link => {
-            link.addEventListener('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    const target = document.querySelector(this.hash);
-                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    
-                    window.scrollTo({
-                        top: target.offsetTop - navbarHeight,
-                        behavior: 'smooth'
-                    });
-    
-                    // Update active class
-                    document.querySelector('.navbar-nav .active')?.classList.remove('active');
-                    this.parentElement.classList.add('active');
-                }
-            });
-        });
     });
     
     
