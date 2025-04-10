@@ -10,32 +10,66 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
 
-        document.addEventListener('DOMContentLoaded', function () {
-        // Inicializar ScrollSpy
-        const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-            target: '.navbar',
-            offset: 70
-        });
-    
-        // Cambiar estilo del navbar al hacer scroll
-        window.addEventListener('scroll', function () {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('nav-sticky');
-            } else {
-                navbar.classList.remove('nav-sticky');
-            }
-        });
-    
+    const navbar = document.querySelector('.navbar-scroll');
+    let lastScrollY = window.scrollY;
+    const tolerance = 5;
+    let ticking = false;
+
+    function handleScroll() {
+        const currentScroll = window.scrollY;
+
+        // Agregar sombra si hay scroll
+        if (currentScroll > 10) {
+            navbar.classList.add('shadow');
+        } else {
+            navbar.classList.remove('shadow');
+        }
+
+        // Mostrar u ocultar según la dirección del scroll
+        if (Math.abs(currentScroll - lastScrollY) <= tolerance) {
+            ticking = false;
+            return;
+        }
+
+        if (currentScroll > lastScrollY && currentScroll > 100) {
+            navbar.style.transform = 'translateY(-100%)';
+        } else {
+            navbar.style.transform = 'translateY(0)';
+        }
+
+        lastScrollY = currentScroll;
+        ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            window.requestAnimationFrame(handleScroll);
+            ticking = true;
+        }
     });
-    
-    
+
+
+    const navbarCollapse = document.getElementById('navbarNav');
+
+    document.addEventListener('click', function (event) {
+        const isClickInside = navbarCollapse.contains(event.target);
+        const isToggler = event.target.closest('.navbar-toggler');
+
+        if (!isClickInside && !isToggler && navbarCollapse.classList.contains('show')) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+            bsCollapse.hide();
+        }
+    });
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -45,10 +79,10 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
-    
+
 
     // Typed Initiate
     if ($('.typed-text-output').length == 1) {
@@ -89,7 +123,7 @@
         $('.progress .progress-bar').each(function () {
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
-    }, {offset: '80%'});
+    }, { offset: '80%' });
 
 
     // Portfolio isotope and filter
@@ -101,7 +135,7 @@
         $("#portfolio-flters li").removeClass('active');
         $(this).addClass('active');
 
-        portfolioIsotope.isotope({filter: $(this).data('filter')});
+        portfolioIsotope.isotope({ filter: $(this).data('filter') });
     });
 
 
@@ -114,6 +148,6 @@
         loop: true,
     });
 
-    
+
 })(jQuery);
 
