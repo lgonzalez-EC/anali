@@ -14,16 +14,10 @@
     z-index: 99;
 }
 
-.my-6 {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
+.my-6, .py-6 {
+    
+    padding: 6rem 0;
 }
-
-.py-6 {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
-}
-
 
 /*** Spinner ***/
 #spinner {
@@ -34,11 +28,10 @@
 }
 
 #spinner.show {
-    transition: opacity .5s ease-out, visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
 }
-
 
 /*** Button ***/
 .btn {
@@ -48,7 +41,15 @@
 
 .btn.btn-primary,
 .btn.btn-secondary {
-    color: #FFFFFF;
+    color: #FFF;
+}
+
+.btn-square, .btn-sm-square, .btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
 }
 
 .btn-square {
@@ -66,19 +67,8 @@
     height: 48px;
 }
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: normal;
-}
-
-
 /*** Navbar ***/
-.navbar{
+.navbar {
     background-color: #4d4d4d9a;
     padding: 15px 0;
     transition: .5s;
@@ -91,12 +81,12 @@
     letter-spacing: 2px;
 }
 
-.navbar .nav-item{
+.navbar .nav-item {
     margin: 0 15px;
     color: #000;
     font-size: 15px;
     font-weight: 500;
-    padding: 10px 10px 8px 10px;
+    padding: 10px 10px 8px;
 }
 
 .navbar-scroll {
@@ -105,14 +95,11 @@
     width: 100%;
     z-index: 1050;
     transition: transform 0.3s ease-in-out;
-  }
+}
 
-  .navbar-scroll.shadow {
+.navbar-scroll.shadow {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  }
-
-
-
+}
 
 /*** Header ***/
 #home {
@@ -138,33 +125,27 @@
     background: var(--primary);
 }
 
-.btn-play:before {
+.btn-play:before, .btn-play:after {
     content: "";
     position: absolute;
     z-index: 0;
     left: 50%;
     top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translate(-50%, -50%);
     display: block;
     width: 60px;
     height: 60px;
-    background: var(--primary);
     border-radius: 100%;
+}
+
+.btn-play:before {
+    background: var(--primary);
     animation: pulse-border 1500ms ease-out infinite;
 }
 
 .btn-play:after {
-    content: "";
-    position: absolute;
+    background: #FFF;
     z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #FFFFFF;
-    border-radius: 100%;
     transition: all 200ms;
 }
 
@@ -182,41 +163,14 @@
 
 @keyframes pulse-border {
     0% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        transform: scale(1);
         opacity: 1;
     }
-
     100% {
-        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(2);
+        transform: scale(2);
         opacity: 0;
     }
 }
-
-.modal-video .modal-dialog {
-    position: relative;
-    max-width: 800px;
-    margin: 60px auto 0 auto;
-}
-
-.modal-video .modal-body {
-    position: relative;
-    padding: 0px;
-}
-
-.modal-video .close {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 0px;
-    top: -30px;
-    z-index: 999;
-    font-size: 30px;
-    font-weight: normal;
-    color: #FFFFFF;
-    background: #000000;
-    opacity: 1;
-}
-
 
 /*** About ***/
 #about .years .display-1 {
@@ -229,7 +183,6 @@
     margin-right: -30px;
 }
 
-
 /*** Skills ***/
 #skill .progress {
     height: 5px;
@@ -237,7 +190,7 @@
 }
 
 #skill .progress .progress-bar {
-    width: 0px;
+    width: 0;
     border-radius: 5px;
     transition: 3s;
 }
@@ -247,13 +200,12 @@
 }
 
 #skill .nav-pills .nav-link.active {
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 #skill .tab-content hr {
     width: 30px;
 }
-
 
 /*** Service ***/
 .service-item .bg-icon {
@@ -262,10 +214,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(../img/bg-icon.png) center center no-repeat;
-    background-size: cover;
+    background: url(../img/bg-icon.png) center/cover no-repeat;
 }
-
 
 /*** Project Portfolio ***/
 #portfolio-flters li {
@@ -308,7 +258,6 @@
     padding-bottom: 30px !important;
 }
 
-
 /*** Team ***/
 .team-item img {
     transition: .5s;
@@ -343,15 +292,12 @@
     margin-left: 30px;
 }
 
-
 /*** Testimonial ***/
-.testimonial-left,
-.testimonial-right {
+.testimonial-left, .testimonial-right {
     position: relative;
 }
 
-.testimonial-left img,
-.testimonial-right img {
+.testimonial-left img, .testimonial-right img {
     position: absolute;
     padding: 5px;
     border: 1px solid var(--secondary);
@@ -399,7 +345,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FFFFFF;
+    background: #FFF;
     border: 1px solid var(--secondary);
     border-radius: 60px;
 }
@@ -418,7 +364,7 @@
     margin: 0 5px;
     width: 30px;
     height: 30px;
-    background: #FFFFFF;
+    background: #FFF;
     border: 2px solid var(--secondary);
     border-radius: 30px;
     transition: .5s;

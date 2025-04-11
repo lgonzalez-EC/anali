@@ -16,6 +16,8 @@
     new WOW().init();
 
 
+
+    // Sticky Navbar
     const navbar = document.querySelector('.navbar-scroll');
     let lastScrollY = window.scrollY;
     const tolerance = 5;
@@ -47,6 +49,7 @@
         ticking = false;
     }
 
+    // Detectar el scroll y aplicar la función handleScroll
     window.addEventListener('scroll', () => {
         if (!ticking) {
             window.requestAnimationFrame(handleScroll);
@@ -54,7 +57,7 @@
         }
     });
 
-
+    // Collapse Navbar
     const navbarCollapse = document.getElementById('navbarNav');
 
     document.addEventListener('click', function (event) {
@@ -71,15 +74,18 @@
 
 
     // Back to top button
+    const headerHeight = document.querySelector('header').offsetHeight;
+
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
-            $('.back-to-top').fadeIn('slow');
+        if ($(this).scrollTop() > headerHeight + 100) { // Aparece solo después de salir del header
+            $('.back-to-top').fadeIn('fast');
         } else {
-            $('.back-to-top').fadeOut('slow');
+            $('.back-to-top').fadeOut('fast');
         }
     });
+
     $('.back-to-top').click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 200, 'easeInOutExpo'); // Duración más rápida
         return false;
     });
 
