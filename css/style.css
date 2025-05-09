@@ -75,10 +75,11 @@
 }
 
 .navbar .navbar-brand {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 1;
     font-weight: 700;
     letter-spacing: 2px;
+    padding: 0 40px;
 }
 
 .navbar .nav-item {
