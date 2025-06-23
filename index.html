@@ -35,6 +35,8 @@
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+
+
     <!-- Spinner Start -->
     <div id="spinner"
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -48,16 +50,15 @@
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark navbar-scroll">
         <div class="container-fluid">
-            <a class="navbar-brand " href="./">Somos People</a>
+            <a class="navbar-brand " href="/">Somos People</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link" href="#service">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#review">Reseña</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
@@ -67,7 +68,9 @@
 
 
     <!-- Header Start -->
-    <header id="home" class="container-fluid bg-light my-6 mt-0 wow fadeIn text-center d-flex align-items-center justify-content-center" style="background: url('img/header.webp') no-repeat center center/cover; height: 100vh;" data-wow-delay="0.1s">
+    <header id="home"
+        class="container-fluid bg-light my-6 mt-0 wow fadeIn text-center d-flex align-items-center justify-content-center"
+        style="background: url('img/header.webp') no-repeat center center/cover; height: 100vh;" data-wow-delay="0.1s">
         <div class="container">
             <h1 class="display-1 text-white fw-bold">Consultoría en Recursos Humanos</h1>
         </div>
@@ -77,13 +80,17 @@
             </a>
             <style>
                 @keyframes bounce {
-                    0%, 100% {
+
+                    0%,
+                    100% {
                         transform: translateY(0);
                     }
+
                     50% {
                         transform: translateY(-10px);
                     }
                 }
+
                 .animate-bounce {
                     animation: bounce 1.5s infinite;
                 }
@@ -100,18 +107,11 @@
                 <h2 class="display-5">Nosotros</h2>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="d-flex align-items-center justify-content-center mb-5">
-                        <!-- <div class="years flex-shrink-0 text-center me-4">
-                            <h1 class="display-1 mb-0">15</h1>
-                            <h5 class="mb-0">Years</h5>
-                        </div> -->
-                        <h2 class="lh-base mb-0">Creamos entornos laborales saludables, fuertes y enfocados a resultados.</h2>
+                        <p class="lh-base mb-0">En Somos People impulsamos el crecimiento de empresas en desarrollo a
+                            través de soluciones estratégicas en recursos humanos. Somos aliados en la formación de
+                            equipos sólidos y culturas organizacionales sanas.</p>
                     </div>
-                    <h3>Misión</h3>
-                    <p class="mb-4">Desarrollar soluciones integrales en gestión de recursos humanos que fortalezcan la cultura organizacional y el bienestar de las personas.</p>
-                    <h3>Visión</h3>
-                    <p class="mb-4">Ser un referente en consultoría de recursos humanos, generando impacto positivo en las empresas y en sus colaboradores.</p>
-                    <!-- <p class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>On Time Project Delivery</p> -->
-                    <!-- <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a> -->
+                    <a class="btn btn-primary py-3 px-5 mt-3" href="nosotros.html">Ver más</a>
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="row g-3 mb-4">
@@ -180,141 +180,169 @@
                     <div class="d-flex align-items-center justify-content-center mb-5">
                         <h2 class="lh-base mb-0">Importancia dela Gestión de RH</h2>
                     </div>
-                    <p class="mb-4 jus">La gestión eficaz de los recursos humanos escrucial para el éxito organizacional. Enfocadosen atraer, retener y desarrollar 
-                        talento,garantizar el cumplimiento de las leyeslaborales, mejorar el compromiso de losempleados y fomentar una cultura laboralpositiva.</p>
-                </div>
-            </div>
-            <div class="row g-4 wow fadeInUp mt-5" data-wow-delay="0.7s">
-                <h2 class="display-5 text-center">Servicios</h2>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-crop-alt fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Creative Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code-branch fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Graphic Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">Web Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                        <div class="bg-icon flex-shrink-0 mb-3">
-                            <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                        </div>
-                        <div class="ms-sm-4">
-                            <h4 class="mb-3">UI/UX Design</h4>
-                            <h6 class="mb-3">Start from <span class="text-primary">$199</span></h6>
-                            <span>Stet lorem dolor diam amet vero eos. No stet est diam amet diam ipsum. Clita dolor duo
-                                clita sit sed sit dolor eos.</span>
-                        </div>
-                    </div>
+                    <p class="mb-4 jus">La gestión eficaz de los recursos humanos escrucial para el éxito
+                        organizacional. Enfocadosen atraer, retener y desarrollar
+                        talento,garantizar el cumplimiento de las leyeslaborales, mejorar el compromiso de losempleados
+                        y fomentar una cultura laboralpositiva.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Service End -->
+    <!-- Service Items Start -->
 
 
-    <!-- Projects Start -->
-    <!-- 9 -->
-    <!-- Projects End -->
-
-
-    <!-- Team Start -->
-    <!-- <div class="container-xxl py-6 pb-5" id="team">
-        <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="col-lg-6">
-                    <h1 class="display-5 mb-0">Team Members</h1>
-                </div>
-                <div class="col-lg-6 text-lg-end">
-                    <a class="btn btn-primary py-3 px-5" href="">Contact Us</a>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-1.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-2.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="team-item position-relative">
-                        <img class="img-fluid rounded" src="img/team-3.jpg" alt="">
-                        <div class="team-text bg-white rounded-end p-4">
-                            <div>
-                                <h5>Full Name</h5>
-                                <span>Designer</span>
-                            </div>
-                            <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                        </div>
-                    </div>
-                </div>
+    <!-- Service Item Start -->
+    <section id="service" class="container py-5">
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h2 class="fw-bold mb-3">Nuestros Servicios</h2>
+                <p class="text-muted">Soluciones integrales para el desarrollo y gestión de tu capital humano.</p>
             </div>
         </div>
-    </div> -->
-    <!-- Team End -->
+        <div class="row g-4 justify-content-center">
+            <!-- service 1 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Atracción de Talento</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Entrevista por competencias</li>
+                        <li>Pruebas psicométricas</li>
+                        <li>Estudios socioeconómicos</li>
+                        <li>Pruebas de confianza</li>
+                        <li>Referencias laborales</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 2 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Cultura Organizacional y Desarrollo Organizacional</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Diseño e implementación de filosofía institucional</li>
+                        <li>Plan de onboarding</li>
+                        <li>Eventos institucionales</li>
+                        <li>Intervenciones de D.O.</li>
+                        <li>Imagen institucional</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 3 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Plan de Vida y Carrera</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Políticas de sueldos, beneficios y desarrollo</li>
+                        <li>Evaluación de desempeño</li>
+                        <li>Inventario de talento</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Gestión del Desempeño</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Evaluación cualitativa y cuantitativa</li>
+                        <li>Evaluación 360°</li>
+                        <li>Planes de acción y retroalimentación</li>
+                        <li>Alineación de metas individuales y organizacionales</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 5 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Seguridad e Higiene</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Prevención de riesgos físicos y psicosociales</li>
+                        <li>Cumplimiento de Normas Oficiales Mexicanas (NOMs)</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 6 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Relaciones Laborales</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Reglamento interior</li>
+                        <li>Clima laboral</li>
+                        <li>Contratación</li>
+                        <li>Satisfacción del personal</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Service 7 -->
+            <div class="col-md-3 col-sm-6">
+                <div class="card h-100 border-0 shadow-sm text-center p-4">
+                    <div class="mb-3">
+                        <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
+                            style="width:70px; height:70px;">
+                            <i class="fa-solid fa-users fa-2x text-primary"></i>
+                        </span>
+                    </div>
+                    <h5 class="fw-bold mb-2">Sistema de Gestión de Calidad RH</h5>
+                    <ul class="text-muted mb-0 text-center ps-0" style="list-style-position: inside;">
+                        <li>Políticas, procedimientos y formatos</li>
+                        <li>KPI’s y objetivos estratégicos</li>
+                        <li>Mejora continua</li>
+                        <li>Planes de trabajo y presupuestos</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Puedes agregar más servicios repitiendo el bloque de arriba -->
+        </div>
+    </section>
+    <!-- Service Item End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
             <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonios</h1>
             <div class="row justify-content-center">
-                <!-- <div class="col-lg-3 d-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block">
                     <div class="testimonial-left h-100">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                     </div>
-                </div> -->
+                </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item text-center">
@@ -364,16 +392,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="col-lg-3 d-none d-lg-block">
+                <div class="col-lg-3 d-none d-lg-block">
                     <div class="testimonial-right h-100">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
                         <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 
@@ -384,7 +412,7 @@
                 <div class="col-lg-12">
                     <h1 class="display-5 mb-0 text-center">Contactanos</h1>
                 </div>
-                
+
             </div>
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -399,9 +427,8 @@
                     <hr class="w-100">
                     <p class="mb-2">Nuestras Redes Sociales:</p>
                     <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-instagram"></i></a>
                         <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -442,16 +469,17 @@
                         </div>
                     </form>
                 </div>
-                <div class="col-12 bg-dark text-white text-center py-5 wow fadeInUp" data-wow-delay="0.7" style="background: url('img/banner.jpg') no-repeat center center/cover; height: 30vh;">
+                <div class="col-12 bg-dark text-white text-center py-5 wow fadeInUp" data-wow-delay="0.7"
+                    style="background: url('img/banner.jpg') no-repeat center center/cover; height: 30vh;">
                     <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                        <h3 class="display-5 fw-bold mb-4">¡Contáctanos También por WhatsApp!</h3>
+                        <h3 class="display-5 fw-bold mb-4">¡Contáctanos por WhatsApp!</h3>
                         <a href="https://wa.me/524772329401" target="_blank" class="btn btn-success btn-lg">
                             <i class="fab fa-whatsapp"></i> Enviar Mensaje
                         </a>
                     </div>
                 </div>
             </div>
-            
+
         </div>
     </div>
     <!-- Contact End -->
