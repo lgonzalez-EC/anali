@@ -6,12 +6,53 @@
   --dark: #12141d;
 }
 
-.back-to-top {
+/* Tipografía global */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* Títulos principales */
+h1,
+h2 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+}
+
+/* .back-to-top {
   position: fixed;
   display: none;
   right: 45px;
   bottom: 45px;
   z-index: 99;
+} */
+
+/* Boton de WhatsApp flotante */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+}
+/* Boton de WhatsApp flotante */
+
+.full-banner {
+  width: 100%;
+  min-height: 300px;
+  background: linear-gradient(to right, #08a5c4, #078ca7);
+  color: white;
+  padding: 60px 20px;
 }
 
 .my-6,
@@ -71,7 +112,7 @@
 
 /*** Navbar ***/
 .navbar {
-  background-color: #4d4d4d9a;
+  background-color: #fdfdfd;
   padding: 15px 0;
   transition: 0.5s;
 }
@@ -90,6 +131,10 @@
   font-size: 15px;
   font-weight: 500;
   padding: 10px 10px 8px;
+}
+
+.nav-link{
+  color: #000;
 }
 
 .navbar-scroll {
@@ -176,7 +221,6 @@
   }
 }
 
-
 /*** About ***/
 .timeline-horizontal-section {
   padding: 60px 0;
@@ -191,9 +235,10 @@
 
 .timeline-card {
   flex: 1 1 30%;
-  min-width: 280px;
+  width: 280px;
   background: #f8f9fa;
   border-top: 4px solid #0d6efd;
+  border-bottom: 4px solid #0d6efd;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
@@ -243,6 +288,77 @@
 }
 
 /*** Service ***/
+.service-horizontal-section {
+  padding: 60px 0;
+}
+
+.service-horizontal {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  flex: 1 1 30%;
+  min-width: 280px;
+  background: #f8f9fa;
+  border: 4px solid #0d6efd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 50px;
+  height: 50px;
+  background: #0d6efd;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 15px auto;
+}
+
+.service-card h3 {
+  color: #0d6efd;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.service-card p{
+  font-size: 19px;
+}
+
+.service-card ul {
+  list-style-position: inside;
+  padding-left: 100px;
+}
+
+@media (max-width: 768px) {
+  .service-horizontal {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .service-card {
+    flex: 1 1 100%;
+  }
+  .service-card ul{
+    padding-left: 50px;
+  }
+}
+
 
 
 /*** Testimonial ***/
