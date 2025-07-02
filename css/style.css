@@ -51,10 +51,12 @@ h2 {
 .full-banner {
   width: 100%;
   min-height: 300px;
-  background: linear-gradient(to right, #08a5c4, #078ca7);
+  background: linear-gradient(to right, #034856, #034856);
   color: white;
   padding: 60px 20px;
 }
+
+/* 08a5c4 */
 
 .my-6,
 .py-6 {
@@ -436,4 +438,58 @@ h2 {
 
 .testimonial-carousel .owl-dot.active::after {
   background: var(--primary);
+}
+
+
+/* Prueba */
+.transport-section {
+  background-color: #0d1b2a; /* fondo oscuro elegante */
+  color: #cbd5e1;
+}
+
+.text-accent {
+  color: #f9e85e; /* amarillo suave */
+}
+
+.border-accent {
+  border-left: 3px solid #f9e85e;
+  padding-left: 0.75rem;
+}
+
+.transport-image-l {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border: 10px solid #f9e85e;
+  /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.transport-image-r{
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border: 10px solid #f9e85e;
+  /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .transport-image {
+    max-width: 300px;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #112233;
+  color: #f9e85e;
+}
+.accordion-body {
+  color: #cbd5e1;
 }
