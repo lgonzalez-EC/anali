@@ -443,7 +443,7 @@ h2 {
 
 /* Prueba */
 .transport-section {
-  background-color: #0d1b2a; /* fondo oscuro elegante */
+  background-color: #0d1b2a9d; /* fondo oscuro elegante */
   color: #cbd5e1;
 }
 
@@ -461,7 +461,7 @@ h2 {
   max-width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
-  border: 10px solid #f9e85e;
+  border: .5px solid #e6e5dd3a;
   /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
@@ -473,7 +473,7 @@ h2 {
   max-width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
-  border: 10px solid #f9e85e;
+  border: .5px solid #e6e5dd3a;
   /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
