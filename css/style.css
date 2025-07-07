@@ -131,18 +131,18 @@ h2 {
 .navbar .nav-item {
   margin: 0 15px;
   color: #2c2c2c;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
   padding: 10px 10px 8px;
 }
 
-.nav-link{
+.nav-link {
   color: #000;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   color: #08a5c4;
-} 
+}
 
 .navbar-scroll {
   position: fixed;
@@ -154,6 +154,16 @@ h2 {
 
 .navbar-scroll.shadow {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-toggler{
+  border-color: #034856;
+}
+
+.navbar-toggler-icon {
+  filter: invert(36%) sepia(99%) saturate(748%) hue-rotate(153deg)
+    brightness(95%) contrast(101%);
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(3,72,86,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
 /*** Header ***/
@@ -269,7 +279,6 @@ h2 {
   padding-left: 0;
 }
 
-
 /*** Service ***/
 .service-horizontal-section {
   padding: 60px 0;
@@ -320,7 +329,7 @@ h2 {
   margin-bottom: 10px;
 }
 
-.service-card p{
+.service-card p {
   font-size: 19px;
 }
 
@@ -337,12 +346,10 @@ h2 {
   .service-card {
     flex: 1 1 100%;
   }
-  .service-card ul{
+  .service-card ul {
     padding-left: 50px;
   }
 }
-
-
 
 /*** Testimonial ***/
 .testimonial-left,
@@ -440,10 +447,9 @@ h2 {
   background: var(--primary);
 }
 
-
 /* Prueba */
 .transport-section {
-  background-color: #0d1b2a9d; /* fondo oscuro elegante */
+  /* background-color: #0d1b2a9d; fondo oscuro elegante */
   color: #cbd5e1;
 }
 
@@ -461,19 +467,19 @@ h2 {
   max-width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
-  border: .5px solid #e6e5dd3a;
+  border: 0.5px solid #e6e5dd3a;
   /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
   border-top-right-radius: 50%;
   border-bottom-right-radius: 50%;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.transport-image-r{
+.transport-image-r {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
-  border: .5px solid #e6e5dd3a;
+  border: 0.5px solid #e6e5dd3a;
   /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;

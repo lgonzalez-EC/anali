@@ -35,7 +35,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" style="background-color: #0d1b2a9d;">
 
     <!-- Spinner Start -->
     <div id="spinner"
@@ -53,11 +53,14 @@
             <a class="navbar-brand d-flex align-items-center text-dark" href="index.html">
                 <img src="img/logo.webp" alt="Logo Somos People" style="height:80px; width:auto; margin-right:10px;">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link text-primary" href="/servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="/#contact">Contacto</a></li>
                 </ul>
             </div>
@@ -179,7 +182,7 @@
                 <!-- Texto + acordeón -->
                 <div class="col-lg-6 text-white order-1 order-lg-1">
                     <span class="d-block text-uppercase small text-accent mb-2 border-accent">Servicio 3</span>
-                    <h2 class="fw-bold mb-3">PLAN DE VIDA Y CARRERA.</h2>
+                    <h2 class="fw-bold mb-3">Plan de Vida Y Carrera.</h2>
                     <p>Ofrecemos herramientas profesionales para optimizar tus procesos de
                         selección y gestión de talento, minimizando riesgos y asegurando el ajuste ideal entre
                         candidatos y tu organización.</p>
@@ -232,7 +235,7 @@
                 <!-- Texto + acordeón -->
                 <div class="col-lg-6 text-white order-2 order-lg-2">
                     <span class="d-block text-uppercase small text-accent mb-2 border-accent">Servicio 4</span>
-                    <h2 class="fw-bold mb-3">Desarrollo Organizacional</h2>
+                    <h2 class="fw-bold mb-3">Gestión del Desempeño</h2>
                     <p>Potenciamos la cultura, estructura y procesos de tu organización para asegurar una transformación
                         positiva y sostenida.</p>
 
@@ -262,6 +265,143 @@
 
                     <p class="my-4">Perfecto para organizaciones que buscan profesionalizarse y crecer con visión
                         estratégica.</p>
+                </div>
+            </div>
+
+            <!-- SERVICIO 5 -->
+            <div class="row align-items-center g-5 mb-5">
+                <!-- Texto + acordeón -->
+                <div class="col-lg-6 text-white order-1 order-lg-1">
+                    <span class="d-block text-uppercase small text-accent mb-2 border-accent">Servicio 5</span>
+                    <h2 class="fw-bold mb-3">Seguridad e Higiene</h2>
+                    <p>Ofrecemos herramientas profesionales para optimizar tus procesos de
+                        selección y gestión de talento, minimizando riesgos y asegurando el ajuste ideal entre
+                        candidatos y tu organización.</p>
+
+                    <!-- Acordeón único para servicio 1 -->
+                    <div class="accordion accordion-flush" id="accordionServicio5">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse5-5" aria-expanded="false"
+                                    aria-controls="collapse5-5">
+                                    ¿Por qué usarlos?
+                                </button>
+                            </h2>
+                            <div id="collapse5-5" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionServicio5">
+                                <div class="accordion-body text-white">
+                                    <ul class="mb-0 list-unstyled">
+                                        <li>Reduces errores en contrataciones.</li>
+                                        <li>Evitas fraudes o malos ajustes culturales.</li>
+                                        <li>Proteges activos e información crítica.</li>
+                                        <li>Construyes equipos más eficientes y alineados.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="my-4">Ideal para empresas que buscan precisión, seguridad y éxito a largo plazo en su
+                        capital humano.</p>
+                </div>
+
+                <!-- Imagen -->
+                <div class="col-lg-6 text-center order-2 order-lg-2">
+                    <div class="overflow-hidden transport-image-r mx-auto">
+                        <img src="img/prueba.webp" alt="Imagen del servicio" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- SERVICIO 6 -->
+            <div class="row align-items-center g-5 mb-5">
+                <!-- Imagen -->
+                <div class="col-lg-6 text-center order-1 order-lg-1">
+                    <div class="overflow-hidden transport-image-l mx-auto">
+                        <img src="img/prueba.webp" alt="Imagen del servicio" class="img-fluid">
+                    </div>
+                </div>
+
+                <!-- Texto + acordeón -->
+                <div class="col-lg-6 text-white order-2 order-lg-2">
+                    <span class="d-block text-uppercase small text-accent mb-2 border-accent">Servicio 6</span>
+                    <h2 class="fw-bold mb-3">Relaciones Laborales</h2>
+                    <p>Potenciamos la cultura, estructura y procesos de tu organización para asegurar una transformación
+                        positiva y sostenida.</p>
+
+                    <!-- Acordeón único para servicio 2 -->
+                    <div class="accordion accordion-flush" id="accordionServicio2">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse6-6" aria-expanded="false"
+                                    aria-controls="collapse6-6">
+                                    Beneficios clave
+                                </button>
+                            </h2>
+                            <div id="collapse6-6" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionServicio6">
+                                <div class="accordion-body text-white">
+                                    <ul class="mb-0 list-unstyled">
+                                        <li>Fortaleces la cultura organizacional.</li>
+                                        <li>Mejoras la comunicación interna.</li>
+                                        <li>Incrementas la eficiencia de tus procesos.</li>
+                                        <li>Favoreces el clima laboral y la retención.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="my-4">Perfecto para organizaciones que buscan profesionalizarse y crecer con visión
+                        estratégica.</p>
+                </div>
+            </div>
+
+            <!-- SERVICIO 5 -->
+            <div class="row align-items-center g-5 mb-5">
+                <!-- Texto + acordeón -->
+                <div class="col-lg-6 text-white order-1 order-lg-1">
+                    <span class="d-block text-uppercase small text-accent mb-2 border-accent">Servicio 7</span>
+                    <h2 class="fw-bold mb-3">Sistema de Gestión de Calidad RH</h2>
+                    <p>Ofrecemos herramientas profesionales para optimizar tus procesos de
+                        selección y gestión de talento, minimizando riesgos y asegurando el ajuste ideal entre
+                        candidatos y tu organización.</p>
+
+                    <!-- Acordeón único para servicio 1 -->
+                    <div class="accordion accordion-flush" id="accordionServicio7">
+                        <div class="accordion-item bg-transparent border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed bg-dark text-white" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapse7-7" aria-expanded="false"
+                                    aria-controls="collapse7-7">
+                                    ¿Por qué usarlos?
+                                </button>
+                            </h2>
+                            <div id="collapse7-7" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionServicio7">
+                                <div class="accordion-body text-white">
+                                    <ul class="mb-0 list-unstyled">
+                                        <li>Reduces errores en contrataciones.</li>
+                                        <li>Evitas fraudes o malos ajustes culturales.</li>
+                                        <li>Proteges activos e información crítica.</li>
+                                        <li>Construyes equipos más eficientes y alineados.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="my-4">Ideal para empresas que buscan precisión, seguridad y éxito a largo plazo en su
+                        capital humano.</p>
+                </div>
+
+                <!-- Imagen -->
+                <div class="col-lg-6 text-center order-2 order-lg-2">
+                    <div class="overflow-hidden transport-image-r mx-auto">
+                        <img src="img/prueba.webp" alt="Imagen del servicio" class="img-fluid">
+                    </div>
                 </div>
             </div>
         </div>
