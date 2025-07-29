@@ -14,6 +14,9 @@
   // Initiate the wowjs
   new WOW().init();
 
+  // Initiate AOS
+  AOS.init();
+
   // Sticky Navbar
   const navbar = document.querySelector(".navbar-scroll");
   let lastScrollY = window.scrollY;

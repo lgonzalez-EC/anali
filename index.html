@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Somos People - Consultor+ia en RRHH</title>
+    <title>Somos People - Consultoria en RRHH</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta name="keywords"
         content="consultoría de recursos humanos, desarrollo organizacional, talento humano, cultura organizacional, equipos de trabajo, empresas en crecimiento, gestión de personal">
@@ -29,8 +29,10 @@
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
+    <!-- AOS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
     <!-- Customized Bootstrap Stylesheet -->
-    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
@@ -54,7 +56,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark navbar-scroll">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center text-dark" href="/">
-                <img src="img/logo.webp" alt="Logo Somos People" style="height:80px; width:auto; margin-right:10px;">
+                <img src="img/logo.webp" alt="Logo Somos People" style="height:75px; width:auto; margin-right:10px;">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -74,8 +76,9 @@
 
     <!-- Header Start -->
     <header id="home"
-        class="container-fluid bg-light my-6 mt-0 wow fadeIn text-center d-flex align-items-center justify-content-center"
-        style="background: url('img/header.webp') no-repeat center center/cover; height: 100vh;" data-wow-delay="0.1s">
+        class="container-fluid bg-light my-6 mt-0 text-center d-flex align-items-center justify-content-center"
+        style="background: url('img/header.webp') no-repeat center center/cover; height: 100vh;" data-aos="fade-in"
+        data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
         <div class="container">
             <h1 class="display-3 text-white fw-bold">Sumar al crecimiento organizacional de nuestros clientes</h1>
         </div>
@@ -106,11 +109,11 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl pt-5 mb-5 wow fadeIn al text-center" id="about" data-wow-delay="0.1s">
+    <div class="container-fluid py-5 my-5 al text-center" id="about">
         <div class="container">
             <div class="row g-5 justify-content-center">
-                <h2 class="display-4">Nosotros</h2>
-                <div class="col-lg-6 d-flex align-items-center px-4 py-3 wow fadeInUp" data-wow-delay="0.1s">
+                <h2 class="display-4" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">Nosotros</h2>
+                <div class="col-lg-6 d-flex align-items-center px-4 py-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
                     <!-- Contenedor en columna -->
                     <div class="d-flex flex-column justify-content-center">
                         <p class="mb-3" style="text-align: justify; font-size: larger;">
@@ -123,7 +126,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-12">
                             <picture>
@@ -142,17 +145,17 @@
 
 
     <!-- Service Start -->
-    <div class="container-fluid my-5 py-5 wow fadeIn" id="" data-wow-delay="0.1s"
+    <div class="container-fluid my-5 py-5"
         style="background: linear-gradient(to right, #08a5c4, #08a5c4);">
         <div class="container">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 mb-5">
                 <div class="col-lg-12 text-center">
-                    <h2 class="display-4 mb-0">Consultoría</h2>
+                    <h2 class="display-4 mb-0" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">Consultoría</h2>
                 </div>
             </div>
-            <div class="row g-5 justify-content-center" data-wow-delay="0.1s">
+            <div class="row g-5 justify-content-center">
                 <!-- Imágenes -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                     <div class="row g-3 mb-4">
                         <div class="col-sm-12">
                             <picture>
@@ -166,7 +169,7 @@
                 </div>
 
                 <!-- Texto y botón alineados verticalmente -->
-                <div class="col-lg-6 wow fadeInUp d-flex align-items-center" data-wow-delay="0.1s">
+                <div class="col-lg-6 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
                     <div class="d-flex flex-column justify-content-center">
                         <div class="mb-3">
                             <h2 class="mb-3 text-start">Importancia de la Gestión de RH</h2>
@@ -187,17 +190,17 @@
 
 
     <!-- Service Item Start -->
-    <section id="service" class="container py-5">
+    <div id="service" class="container py-5 my-5">
         <div class="row mb-4">
             <div class="col text-center">
-                <h2 class="display-4 mb-3">Nuestros Servicios</h2>
-                <p class="text-muted" style="text-align: center; font-size: large;">Soluciones integrales para el
+                <h2 class="display-4 mb-3" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">Nuestros Servicios</h2>
+                <p class="text-muted" style="text-align: center; font-size: large;" data-aos="fade-in" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">Soluciones integrales para el
                     desarrollo y gestión de tu capital humano.</p>
             </div>
         </div>
         <div class="row g-4 justify-content-center">
             <!-- service 1 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" data-aos-once="true">
                 <div class="card h-100 border-0 shadow-sm text-center p-4">
                     <div class="mb-3">
                         <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
@@ -217,7 +220,7 @@
                 </div>
             </div>
             <!-- Service 2 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
                 <div class="card h-100 border-0 shadow-sm text-center p-4">
                     <div class="mb-3">
                         <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
@@ -237,7 +240,7 @@
                 </div>
             </div>
             <!-- Service 3 -->
-            <div class="col-md-4 col-sm-6">
+            <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
                 <div class="card h-100 border-0 shadow-sm text-center p-4">
                     <div class="mb-3">
                         <span class="d-inline-flex align-items-center justify-content-center rounded-circle bg-light"
@@ -255,20 +258,12 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 text-center">
+            <div class="col-md-4 col-sm-6 text-center" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
                 <a class="btn btn-primary py-3 px-5 mt-3" href="servicios.html">Ver más</a>
             </div>
         </div>
-    </section>
+    </div>
     <!-- Service Item End -->
-
-
-
-    <!-- Prueba -->
-
-
-
-
 
 
     <!-- Banner WhatsApp Start -->
@@ -288,7 +283,7 @@
     <!-- Banner WhatsApp Start -->
     <section class="full-banner d-flex flex-column justify-content-center align-items-center text-center">
         <div class="container">
-            <h3 class="text-white mb-3">¡Cotiza con nosotros en minutos!</h3>
+            <h3 class="text-white display-6 mb-3">¡Cotiza con nosotros en minutos!</h3>
             <a href="https://wa.me/524772329401?text=Hola,%20me%20interesa%20más%20información" target="_blank"
                 class="btn px-4 py-2 text-white" style="background-color: #25d366;">
                 <i class="fab fa-whatsapp me-2"></i> Escríbenos por WhatsApp
@@ -299,18 +294,11 @@
 
 
     <!-- Testimonial Start -->
-    <!-- <div class="container-fluid bg-light py-5 my-5" id="testimonial">
+    <div class="container-fluid py-5 my-5" id="testimonial">
         <div class="container-fluid py-5">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Testimonios</h1>
+            <h1 class="display-5 text-center mb-5" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">Testimonios</h1>
             <div class="row justify-content-center">
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-left h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
                     <div class="owl-carousel testimonial-carousel">
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -324,8 +312,8 @@
                                 labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
                                 tempor erat.</p>
                             <hr class="w-25 mx-auto">
-                            <h5>Client Name</h5>
-                            <span>Profession</span>
+                            <h5>Salvador Elizondo</h5>
+                            <span>SEEM</span>
                         </div>
                         <div class="testimonial-item text-center">
                             <div class="position-relative mb-5">
@@ -357,33 +345,55 @@
                             <h5>Client Name</h5>
                             <span>Profession</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 d-none d-lg-block">
-                    <div class="testimonial-right h-100">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.1s" src="img/testimonial-1.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.3s" src="img/testimonial-2.jpg" alt="">
-                        <img class="img-fluid wow fadeIn" data-wow-delay="0.5s" src="img/testimonial-3.jpg" alt="">
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/testimonial-4.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
+                                tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
+                        <div class="testimonial-item text-center">
+                            <div class="position-relative mb-5">
+                                <img class="img-fluid rounded-circle border border-secondary p-2 mx-auto"
+                                    src="img/testimonial-1.jpg" alt="">
+                                <div class="testimonial-icon">
+                                    <i class="fa fa-quote-left text-primary"></i>
+                                </div>
+                            </div>
+                            <p class="fs-5 fst-italic">Dolores sed duo clita tempor justo dolor et stet lorem kasd
+                                labore dolore lorem ipsum. At lorem lorem magna ut et, nonumy et labore et tempor diam
+                                tempor erat.</p>
+                            <hr class="w-25 mx-auto">
+                            <h5>Client Name</h5>
+                            <span>Profession</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
     <!-- Testimonial End -->
 
-    <br>
 
     <!-- Contact Start -->
-    <div class="container-xxl pb-5" id="contact">
+    <div class="container-fluid py-5 my-5" id="contact">
         <div class="container py-5">
-            <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-5 mb-5" data-aos="fade-in" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
                 <div class="col-lg-12">
                     <h2 class="display-4 mb-0 text-center">Contactanos</h2>
                 </div>
 
             </div>
             <div class="row g-5">
-                <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-5 col-md-6" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
                     <p class="mb-2">Ubicación:</p>
                     <h3 class="">Benedicto XV 144, San Jerónimo II</h3>
                     <hr class="w-100">
@@ -400,7 +410,7 @@
                         <a class="btn btn-square btn-primary me-2" href=""><i class="fab fa-linkedin-in"></i></a>
                     </div> -->
                 </div>
-                <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="col-lg-7 col-md-6" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" data-aos-once="true">
                     <form id="contact-form">
                         <input type="hidden" name="access_key" value="5fb0b492-9907-40b0-a8f0-43cff00f7ce4">
                         <input type="hidden" name="subject" value="Nuevo mensaje desde el formulario de página web">
@@ -445,7 +455,7 @@
             </div>
         </div>
     </div>
-    <!-- contacto@somospeople.com.mx	Contraseña: Operaciones1 -->
+    <!--Contacto End -->
 
 
     <!-- Modal éxito -->
@@ -462,6 +472,7 @@
         </div>
     </div>
 
+
     <!-- Modal error -->
     <div class="modal fade" id="errorModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -475,13 +486,11 @@
             </div>
         </div>
     </div>
-
-
     <!-- Contact End -->
 
 
     <!-- Map Start -->
-    <div class="container-xxl py-5 px-0 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container-xxl py-5 px-0" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-once="true">
         <div class="container-xxl pt-5 px-0">
             <div class="bg-dark">
                 <iframe
@@ -532,6 +541,8 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
