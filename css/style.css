@@ -156,7 +156,7 @@ h2 {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-.navbar-toggler{
+.navbar-toggler {
   border-color: #034856;
 }
 
@@ -498,4 +498,12 @@ h2 {
 }
 .accordion-body {
   color: #cbd5e1;
+}
+
+.transition-rotate {
+  transition: transform 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .transition-rotate {
+  transform: rotate(180deg);
 }
