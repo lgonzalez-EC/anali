@@ -1,4 +1,3 @@
-/********** Template CSS **********/
 :root {
   --primary: #08a5c4;
   --secondary: #034856;
@@ -6,28 +5,17 @@
   --dark: #12141d;
 }
 
-/* Tipografía global */
 body {
   font-family: "Rubik", sans-serif;
   background-color: #08a5c458;
 }
 
-/* Títulos principales */
-h1,
-h2 {
+h1, h2 {
   font-family: "Mulish", sans-serif;
   font-weight: 700;
 }
 
-/* .back-to-top {
-  position: fixed;
-  display: none;
-  right: 45px;
-  bottom: 45px;
-  z-index: 99;
-} */
-
-/* Boton de WhatsApp flotante */
+/* WhatsApp Button */
 .whatsapp-float {
   position: fixed;
   bottom: 20px;
@@ -46,12 +34,15 @@ h2 {
   width: 40px;
   height: 40px;
 }
-/* Boton de WhatsApp flotante */
 
 .full-banner {
   width: 100%;
   min-height: 300px;
   background: linear-gradient(to right, #034856, #034856);
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1920' height='560' preserveAspectRatio='none' viewBox='0 0 1920 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1031%26quot%3b)' fill='none'%3e%3crect width='1920' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M-84.64 9.97 a94.61 94.61 0 1 0 189.22 0 a94.61 94.61 0 1 0 -189.22 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-48 -26.67 a21.33 21.33 0 1 0 42.66 0 a21.33 21.33 0 1 0 -42.66 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-46.31 -28.36 a17.95 17.95 0 1 0 35.9 0 a17.95 17.95 0 1 0 -35.9 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1697.58 35.76 a146.18 146.18 0 1 0 292.36 0 a146.18 146.18 0 1 0 -292.36 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1699.08 34.25 a143.17 143.17 0 1 0 286.34 0 a143.17 143.17 0 1 0 -286.34 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1687.65 45.69 a166.04 166.04 0 1 0 332.08 0 a166.04 166.04 0 1 0 -332.08 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M-107.85 481.18 a141.03 141.03 0 1 0 282.06 0 a141.03 141.03 0 1 0 -282.06 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M-79.25 452.58 a83.83 83.83 0 1 0 167.66 0 a83.83 83.83 0 1 0 -167.66 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M-86.91 460.25 a99.16 99.16 0 1 0 198.32 0 a99.16 99.16 0 1 0 -198.32 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1711.93 469.41 a117.48 117.48 0 1 0 234.96 0 a117.48 117.48 0 1 0 -234.96 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1770.25 411.09 a0.84 0.84 0 1 0 1.68 0 a0.84 0.84 0 1 0 -1.68 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1680.44 500.9 a180.46 180.46 0 1 0 360.92 0 a180.46 180.46 0 1 0 -360.92 0z' fill='rgba(28%2c 83%2c 142%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1031'%3e%3crect width='1920' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover; /* o: contain, 100% auto, según el efecto */
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
   padding: 60px 20px;
 }
@@ -282,18 +273,16 @@ h2 {
   padding-left: 0;
 }
 
-/*** Service ***/
+/* Services */
 .service-horizontal-section {
   padding: 60px 0;
 }
-
 .service-horizontal {
   display: flex;
   justify-content: space-between;
   gap: 30px;
   flex-wrap: wrap;
 }
-
 .service-card {
   flex: 1 1 30%;
   min-width: 280px;
@@ -308,11 +297,9 @@ h2 {
   flex-direction: column;
   height: 100%;
 }
-
 .service-card:hover {
   transform: translateY(-5px);
 }
-
 .service-icon {
   width: 50px;
   height: 50px;
@@ -323,24 +310,20 @@ h2 {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin: 0 auto 15px auto;
+  margin: 0 auto 15px;
 }
-
 .service-card h3 {
   color: #0d6efd;
   font-weight: 600;
   margin-bottom: 10px;
 }
-
 .service-card p {
   font-size: 19px;
 }
-
 .service-card ul {
   list-style-position: inside;
   padding-left: 100px;
 }
-
 @media (max-width: 768px) {
   .service-horizontal {
     flex-direction: column;
@@ -354,51 +337,40 @@ h2 {
   }
 }
 
-/*** Testimonial ***/
-.testimonial-left,
-.testimonial-right {
+/* Testimonial */
+.testimonial-left, .testimonial-right {
   position: relative;
 }
-
-.testimonial-left img,
-.testimonial-right img {
+.testimonial-left img, .testimonial-right img {
   position: absolute;
   padding: 5px;
   border: 1px solid var(--secondary);
   border-radius: 70px;
 }
-
-.testimonial-left img:nth-child(1),
-.testimonial-right img:nth-child(3) {
+.testimonial-left img:nth-child(1), .testimonial-right img:nth-child(3) {
   width: 70px;
   height: 70px;
   top: 10%;
   left: 50%;
   transform: translateX(-50%);
 }
-
-.testimonial-left img:nth-child(2),
-.testimonial-right img:nth-child(2) {
+.testimonial-left img:nth-child(2), .testimonial-right img:nth-child(2) {
   width: 60px;
   height: 60px;
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
 }
-
-.testimonial-left img:nth-child(3),
-.testimonial-right img:nth-child(1) {
+.testimonial-left img:nth-child(3), .testimonial-right img:nth-child(1) {
   width: 50px;
   height: 50px;
   bottom: 10%;
   right: 10%;
 }
-
 .testimonial-carousel .owl-item img {
   width: 120px;
   height: 120px;
 }
-
 .testimonial-carousel .testimonial-icon {
   position: absolute;
   width: 40px;
@@ -413,7 +385,6 @@ h2 {
   border: 1px solid var(--secondary);
   border-radius: 60px;
 }
-
 .testimonial-carousel .owl-dots {
   height: 40px;
   margin-top: 25px;
@@ -421,7 +392,6 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-
 .testimonial-carousel .owl-dot {
   position: relative;
   display: inline-block;
@@ -433,10 +403,9 @@ h2 {
   border-radius: 30px;
   transition: 0.5s;
 }
-
 .testimonial-carousel .owl-dot::after {
-  position: absolute;
   content: "";
+  position: absolute;
   width: 16px;
   height: 16px;
   top: 5px;
@@ -445,56 +414,45 @@ h2 {
   background: var(--secondary);
   transition: 0.5s;
 }
-
 .testimonial-carousel .owl-dot.active::after {
   background: var(--primary);
 }
 
-/* Prueba */
+/* Sección Transporte */
 .transport-section {
-  /* background-color: #0d1b2a9d; fondo oscuro elegante */
   color: #cbd5e1;
 }
-
 .text-accent {
-  color: #f9e85e; /* amarillo suave */
+  color: #f9e85e;
 }
-
 .border-accent {
   border-left: 3px solid #f9e85e;
   padding-left: 0.75rem;
 }
-
-.transport-image-l {
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 1/1;
-  overflow: hidden;
-  border: 0.5px solid #e6e5dd3a;
-  /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
-  border-top-right-radius: 50%;
-  border-bottom-right-radius: 50%;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
-}
-
+.transport-image-l,
 .transport-image-r {
   width: 100%;
   max-width: 400px;
   aspect-ratio: 1/1;
   overflow: hidden;
   border: 0.5px solid #e6e5dd3a;
-  /* border-radius: 50%; 🔁 cámbialo para otro tipo de redondez */
-  border-top-left-radius: 50%;
-  border-bottom-left-radius: 50%;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
-
+.transport-image-l {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+.transport-image-r {
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
 @media (max-width: 768px) {
   .transport-image {
     max-width: 300px;
   }
 }
 
+/* Accordion */
 .accordion-button:not(.collapsed) {
   background-color: #112233;
   color: #f9e85e;
@@ -502,11 +460,9 @@ h2 {
 .accordion-body {
   color: #cbd5e1;
 }
-
 .transition-rotate {
   transition: transform 0.3s ease;
 }
-
 .accordion-button:not(.collapsed) .transition-rotate {
   transform: rotate(180deg);
 }
