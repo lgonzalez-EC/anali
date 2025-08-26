@@ -108,8 +108,8 @@ h1, h2 {
 .navbar {
   background-color: #fdfdfdd2;
   padding: 15px 0;
-  backdrop-filter: blur(10px); /* Desenfoque del fondo */
-  -webkit-backdrop-filter: blur(10px); /* Para Safari */
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px);
   transition: all 0.3s ease;
   transition: 0.5s;
 }
